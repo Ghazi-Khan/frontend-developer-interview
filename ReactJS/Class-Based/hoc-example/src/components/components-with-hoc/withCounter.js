@@ -1,7 +1,7 @@
 import React from "react";
 
-const WithCounter = (WrappedComponent) => {
-  class NewComponent extends React.Component {
+const withCounter = (WrappedComponent) => {
+  class WithCounter extends React.Component {
     constructor(props) {
       super(props);
       this.state = {
@@ -22,7 +22,7 @@ const WithCounter = (WrappedComponent) => {
       );
     }
   }
-  return NewComponent;
+  return WithCounter;
 };
 
-export default WithCounter;
+export default withCounter;
