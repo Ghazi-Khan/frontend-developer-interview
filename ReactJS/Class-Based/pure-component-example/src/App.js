@@ -14,7 +14,9 @@ class App extends Component {
       listA: [],
       listB: [],
     };
+  }
 
+  componentDidMount() {
     setInterval(() => {
       const listACopy = this.state.listA;
       const listBCopy = this.state.listB;
